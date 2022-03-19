@@ -1,0 +1,565 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="Style/style.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  </head>
+      
+       <nav
+       id="navbar"
+       class="navbar fixed-top navbar-light bg-white navbar-expand-lg ps-lg-5 pe-lg-5 d-flex"
+     >
+     <img class="logo-header-style" src="Style/img/logo-header.svg" class="m-lg-2 mx-lg-4"></img>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+  
+       <div class="collapse navbar-collapse mobile-nav" id="navbarSupportedContent">
+         <ul
+           id="navbarHeight"
+           class="navbar-nav me-auto"
+         >
+           <li class="nav-item">
+             <p class="text-gray my-3 ms-lg-5">
+                 Product
+                 <img src="Style/Img/angle-down-solid.svg" class="arrow mx-lg-1"></img>
+               </p>
+           </li>
+           <li class="nav-item">
+             <p class="text-gray my-3 mx-lg-4">
+                 Resources
+                 <img src="Style/Img/angle-down-solid.svg" class="arrow mx-lg-1"></img>
+               </p>
+           </li>
+           <li class="nav-item">
+             <p class="text-gray my-3">
+                 Company
+                 <img src="Style/Img/angle-down-solid.svg" class="arrow mx-lg-1"></img>
+               </p>
+           </li>    
+         </ul>
+         <div class="d-flex justify-content-around">
+             <a class="text-gray m-lg-2  mx-lg-4 pt-2">Log in</a>
+             <button class="btn btn-primary m-lg-2  py-2 px-4">
+               Get started
+             </button>
+           </div>
+         </div>
+       </div>  
+     </nav>
+  
+      <body>
+       
+        <div class="row mt-5">
+          <div class="col-12 my-5 text-center">
+            <h1 class="title-style">
+              <div id="news-title">
+                <span class="title-gray">Enterprise League</span>
+                <span class="title-blue">In the News</span>
+              </div>
+              
+             <div id="press-title">
+               <span class="title-gray">Enterprise League</span>
+              <span class="title-blue">Press</span>
+            </div>
+            
+            </h1>
+          </div>
+  
+          <div class="col-12 d-flex"> 
+            <div id="filter-news" class="col-6 d-flex justify-content-end px-2">
+            <label>
+              <h2 class="underline-checked-news" id="news-input">In the News</h2>
+              <input onclick="displayFunction()" name="filter" value="1" id="filter-news" type="radio" checked style="opacity: 0" />
+          </label>
+        </div>
+  
+          <div id="filter-press" class="col-6 px-2 mb-5 d-flex justify-content-start">
+              <label>
+                <h2 class="underline-not-checked" id="press-input">Press</h2>
+                <input onclick="displayFunction()" name="filter" value="2" id="filter-press" type="radio" style="opacity: 0" />
+            </label>
+          </div>
+        </div>
+          
+          </div>
+        </div>
+  
+        <div class="text-center col-12">
+          <div id="news" class="thenews  px-3">
+            <div  class="row d-flex col-10 offset-1 justify-content-center">
+              <div class="col-lg-4 col-sm-10 col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-4 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-1" src="Style/Img/startupinfo.png">
+                  </div>
+                  <div class="text">
+                    <h5>Enterprise League, Building the Fastest Growing Business Platform for Companies</h5>
+                    <p>That’s why it is important to optimize the way we gather and analyze user feedback. When creating our feedback forms, we focus on addressing common concerns and misunderstandings that we have heard about from our support channels. We often opt for the personal approach with our users and are in regular contact with them through social media and email.<br><br>
+                      Irina Georgieva CEO and co-founder of Enterprise League</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-2" src="Style/Img/business-insider-logo.png">
+                  </div>
+                  <div class="text">
+                    <h5>Best online business communities</h5>
+                    <p>Enterprise League is a platform that connects SMEs, enabling them to find business partnerships and collaborations. The Al-powered online platform allows users to screen potential partnerships quickly, and organize existing ones. The aim is to help your business become more visible, and grow faster, something Enterprise League knows all about - it's fast-growing business itself.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-3" src="Style/Img/classicinformatics.png">
+                  </div>
+                  <div class="text">
+                    <h5>Best Business Apps</h5>
+                    <p class>Irina Georgieva, Co-Founder & CEO of Enterprise League tells that ‘Enterprise League’ is the fastest growing business platform for startups and SMEs, having acquired circa 100K users in 2020 alone. Powered by a smart search algorithm, companies get recommended business opportunities tailored to their preferences. Companies use the platform to take back control over their finances and operations, reduce business dependencies like relying on middlemen, limited clients, weak supply chain, and more.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-4" src="Style/Img/startup.png">
+                  </div>
+                  <div class="text">
+                    <h5>Top 101 small and medium businesses and startups</h5>
+                    <p>At Enterprise League, we are passionate about helping people improve the way they do business. We are on a mission to help millions of entrepreneurs expand their business horizon and increase their company’s success.</p>
+                   </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-5" src="Style/Img/uknews.png">
+                  </div>
+                  <div class="text">
+                    <h5>Business platform Enterprise League sees unprecedented user growth</h5>
+                    <p>Enterprise League is extremely proud to share such results particularly since it is facilitating the way companies collaborate during these difficult times we are facing. We are constantly collecting first-hand feedback from our users with the sole purpose of creating and providing more value to companies within the UK.</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-6" src="Style/Img/umi.png">
+                  </div>
+                  <div class="text">
+                    <h5>Startup Stories: Enterprise League</h5>
+                    <p>Enterprise League (EL) is a B2B platform for SMEs. Through EL’s platform, small businesses can advertise what their value offerings are for free and search for other firms they can do business with. Moreover, companies can specify exactly what they need at the moment through “bid” posts which are also searchable through our extensive search filters (location, industry, sector, number of employees, and specific keywords).
+                      <br><br>
+                      Irina Georgieva CEO and co-founder of Enterprise League
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-7" src="Style/Img/upgrade.png">
+                  </div>
+                  <div class="text">
+                    <h5>5 Cost effective ways to scale up your business</h5>
+                    <p>Many entrepreneurs around the world are under constant pressure to scale up their businesses. They repeatedly receive different bits of advice from both investors and advisors. One side wants to scale your business fast, whilst the other advises you to do go through the process patiently and carefully. To make things easier for you when choosing the best business scaling strategy, we will go through every detail you need to know, starting with the basics.</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-8" src="Style/Img/upjourney.png">
+                  </div>
+                  <div class="text">
+                    <h5>How to Stop Feeling Overwhelmed at Work (121 Powerful Tips)</h5>
+                    <p>At some point, you must realize that you need to change something if you want to keep your health and sanity, and still succeed with your business. I understood that, adapted to the situation and found a solution to this common problem that many entrepreneurs face.
+                      <br><br>
+                      To remain energized, I scheduled a Monday to Friday gym exercise. You’ll probably think that the situation will get worse, but on the contrary, things changed for the better.
+                      <br><br>
+                      Irina Georgieva CEO and co-founder of Enterprise League.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-9" src="Style/Img/prmoment.png">
+                  </div>
+                  <div class="text">
+                    <h5>Reasons to be Cheerful about Brexit</h5>
+                    <p>We are expecting to fare even better as there will be an increasing need to connect EU and UK SMEs to work together. As we are breaking walls between countries, we are witnessing a lot of connections between companies from the same industry, meaning SMEs are open to collaborate with their fellow industry members, to expand knowledge and create new opportunities. This will undoubtedly trigger a surge in innovation and we can expect to see growth for SMEs.
+                      <br><br>
+                      Irina Georgieva CEO and co-founder of Enterprise League.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-10" src="Style/Img/globalapptesting.png">
+                  </div>
+                  <div class="text">
+                    <h5>Time Management Techniques from CTOs</h5>
+                    <p>As a CTO the most important things for me are the productivity &amp; efficiency of my team. Considering the fast-paced &amp; information-saturated world we live in, it is crucial for us to be clear about the priorities for the team and how that reflects our goals
+                      <br><br>
+                      - Atanas Georgiev, Co-Founder &amp; CTO of&nbsp;Enterprise League
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-11" src="Style/Img/cydomedia.png">
+                  </div>
+                  <div class="text">
+                    <h5>3 Entrepreneurs provide advice on leading teams with remote employees</h5>
+                    <p>At Enterprise League, people are our most valuable resources. Their contribution helps us keep the business platform running and growing despite the pandemic crisis we are currently facing.
+                      <br><br>
+                      As we have been constrained to rely solely on remote working, I have adopted weekly checkpoints for leading teams and weekly goss meetings to keep a quality communication level and recreate the team’s connection remotely.
+                      <br><br>
+                      Irina Georgieva CEO and co-founder of Enterprise League
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-12" src="Style/Img/tech-round-logo.png">
+                  </div>
+                  <div class="text">
+                    <h5>Interview with Irina Georgieva, Co-founder and CEO of Enterprise League</h5>
+                    <p>We can expect to see Enterprise League to play a significant part in helping businesses out of the crisis caused by the pandemic. Many companies will turn to the platform in search for business deals and collaborations to fill out the gaps left by their clients and business partners.
+                    <br><br>
+                    To better address this need, we are working hard to quickly scale the platform to more countries besides the UK and USA where we have a solid presence. The aim is to create the world’s go-to place where business happens.
+                    <br><br>
+                    Irina Georgieva CEO and co-founder of Enterprise League
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-13" src="Style/Img/harmonizelyblog.png">
+                  </div>
+                  <div class="text">
+                    <h5>10+ insightful tips for new managers</h5>
+                    <p>In order to unleash your employees’ full potential, you must give them responsibilities. Allocate each employee processes which they own and manage independently. Your role will be to provide them with guidance and be available for consultations. Therefore giving them a sense of ownership and responsibility will enable them to grow in their role quicker and more successfully. It will challenge their&nbsp;time management&nbsp;and organizational skills but with time and perseverance, they will acquire skills that won’t come from micromanagement.
+                      <br><br>
+                    Irina Georgieva CEO and co-founder of Enterprise League
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-14" src="Style/Img/usco.png">
+                  </div>
+                  <div class="text">
+                    <h5>Ways to cut overhead costs</h5>
+                    <p>Review your marketing mix [and] compare how much you are spending and gaining from each channel. If, for example, you are investing a lot in PR … but you don’t see a significant increase in your website traffic, it is very likely that you are targeting the wrong marketing channel.
+                      <br><br>
+                    Irina Georgieva CEO and co-founder of Enterprise League
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-15" src="Style/Img/mycorporation.png">
+                  </div>
+                  <div class="text">
+                    <h5>Work from home outfit</h5>
+                    <p>A simple day dress is my to-go WFH outfit. It is easy to wear, and often very comfortable for long hours spent sitting on a desk. The main reasoning behind this type of outfit is to wear something that isn’t tight and makes you feel uncomfortable, that you cannot wait to take off after work.
+                      <br><br>
+                    Irina Georgieva CEO and co-founder of Enterprise League
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-16" src="Style/Img/welivetobuild.png">
+                  </div>
+                  <div class="text">
+                    <h5>CEO Interview - Irina Georgieva</h5>
+                    <p>The original idea was to bring more business opportunities to small companies around the world by giving them direct access to potential business collaborations and eliminate the need to rely on the middleman. This is still at the core of what we do.
+                      <br><br>
+                    Irina Georgieva CEO and co-founder of Enterprise League
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-17" src="Style/Img/carolroth.png">
+                  </div>
+                  <div class="text">
+                    <h5>Positive Mindset Tips for Small Business</h5>
+                    <p>Focus on the things/aspects of your work that you can control. Be rational, put your energy towards identifying ways you can adapt your business e.g., increase your online presence, join seminars, do online networking, etc. Key is to think of ways to adapt your practices to fit the current situation we are facing.
+                      <br><br>
+                    Irina Georgieva CEO and co-founder of Enterprise League
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-18" src="Style/Img/workclub.png">
+                  </div>
+                  <div class="text">
+                    <h5>Future of Works Interview - Irina Georgieva</h5>
+                    <p>Our goal has been to be very agile in terms of our employee performance and their processes. Thus we introduced monthly employee performance reviews to help us identify bottlenecks in a timely manner and work on eliminating these.
+                      <br>
+                      Continuous feedback will remain to be an essential practice within our company as it’s essential to help our employees navigate their job responsibilities and meet performance expectations successfully.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-6 col-sm-10 col-lg-4">
+                <div class="cards  p-3 m-lg-2 mb-5 bg-white">
+                  <div class="img-height">
+                    <img class="card-image-19" src="Style/Img/beyourown.png">
+                  </div>
+                  <div class="text">
+                    <h5>Business Education for female entrepreneurs</h5>
+                    <p>The number of female entrepreneurs has been on the rise in recent years and now more than ever women are aspiring to achieve financial freedom. However, it is a fact that many are discouraged by the huge gap of knowledge they are faced with.&nbsp;Not knowing where to start and what steps they need to take, keeps women stuck in their 9-5 jobs.
+                    <br><br>
+                    Irina Georgieva CEO and co-founder of Enterprise League
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+  
+            </div>
+  
+           
+  
+          </div>
+          <div id="press" class="thepress row col-lg-12">
+            <div class="thepress row d-flex justify-content-center">
+              <div class="bg-white rounded col-lg-9 col-md-10 col-sm-10  press-cards-shadow p-4 d-flex mb-5">
+                <div class="p-2 col-4">
+                  <img class="press-card-images" src="Style/Img/press-img-three.png" alt="">
+                </div>
+                <div class="card-context p-2 ps-4">
+                  <h2 class="text-center">2020 in review: A letter from our CEO and Co-Founder</h2>
+                  <p>London, UK, December 30th, 2020</p>
+                  <p class="text-start">
+                    Another year is drawing to a close; and we once again find ourselves planning for the future, but also reflecting on the events of 2020 – we hope that despite the difficulties and uncertainty this year has brought, you have managed to stay strong and focused on the things you can control.
+                    <span id="dots"></span><span id="more">In that manner, Enterprise League has continued to work hard on connecting businesses worldwide. Our focus has always been to bring more business opportunities to small businesses. Thus, seeing how severely they suffered due to the pandemic, our drive to improve the platform, and provide them with better solutions, only grew stronger.
+    
+                      Thanks to nearly 100k new companies that joined the platform (a big milestone for us!) we got an unprecedented growth momentum which consequently brought us a humbling number of opportunities.
+                      
+                      This success didn’t pass unrecognised – we had the privilege of being named as one of the best business platforms by the Business Insider.
+                      
+                      Lead by the same currents of growth, this year we have formed deeper relationships with both new and old users, expanded our partners’ circle, and scaled our team.
+                      
+                      As we reflect, we think about who we are and who we want to be, both personally and as a company. A commitment to quality and value is one of our fundamental business principles, we firmly believe in excelling in what we promise and deliver.
+                      
+                      What we’re most proud of this year is that we’ve managed to provide the same high level of service and solutions to all companies, regardless of their background. Given that, we seek to make our solutions easily accessible – keeping the lines of communication open in order to help our users with their platform experience. We are committed to combine courage and wisdom to move forward; confidently pursuing growth and investment while not abandoning our values.
+                      
+                      It is our hope that these things have all been clearly evident in the past year, and that they continue into the future. Finally, we once again express our sincere appreciation to all of our users, readers and collaborators; wishing you and your families a bright hopeful start to 2021.
+                      
+                      Irina Georgieva
+                      Co-founder and CEO of Enterprise League</span>
+                    </p>
+      
+                    <a onclick="myFunction()" id="myBtn" class="title-blue fs-5 text-decoration-none d-flex justify-content-end">Read more</a>
+                  </div>
+                
+                </div>
+                
+                <div class="bg-white rounded col-lg-9 col-md-10 col-sm-10  press-cards-shadow p-4 d-flex mb-5">
+                  <div class="p-2 col-4">
+                    <img class="press-card-images" src="Style/Img/press-img-two.png" alt="">
+                  </div>
+                  <div class="card-context p-2 ps-4">
+                    <h2 class="text-center">Over 100,000 companies join business platform since the virus crisis started</h2>
+                    <p>London, UK, October 14th, 2020</p>
+                    <p class="text-start">
+                      London, UK, Oct 14th, Enterprise League today announced that it registered a huge increase of over 100,000 SMEs joining its business platform. Companies seek to minimise their business loss after their forced closure in more than 40 countries worldwide and ahead of a second lockdown.
+                      “The only way for companies to survive is to reinvent themselves” said Enterprise League’s CTO, Atanas Georgiev.
+                      <span id="dots2"></span><span id="more2">Among these SMEs are companies from letious industries including: technology, retail, food, manufacturing, service providers and many more. Enterprise League facilitates the remote connection between businesses. The smart AI algorithm matches companies that have potential to collaborate with each other. 74% of the suggested business matches end up with a business deal.
+    
+                        The business platform is meant for every business in the world, from all sectors and all locations.
+                        Enterprise League is quickly becoming a known platform to identify and access new business opportunities, find business partners and close business deals all fully remotely. Designed to help all companies, even the ones most at risk during this crisis.</span>
+                      
+                      </p>
+                      <a onclick="myFunction2()" id="myBtn2" class="title-blue fs-5 text-decoration-none d-flex justify-content-end">Read more</a>
+                    </div>
+                  
+                  </div>
+    
+                  <div class="bg-white rounded col-lg-9 col-md-10 col-sm-10 press-cards-shadow p-4 d-flex mb-5">
+                    <div class="p-2 col-4">
+                      <img class="press-card-images" src="Style/Img/press-img-one.png" alt="">
+                    </div>
+                    <div class="card-context p-2 ps-4">
+                      <h2 class="text-center">The Solution to the Global Business #Lockdown</h2>
+                      <p>London, UK - March 26, 2020</p>
+                      <p class="text-start">
+                        Enterprise League today has announced that the B2B platform through which companies collaborate remotely is open to SMEs for free. This action comes as an attempt to help SMEs minimise the losses they are incurring due to the forced lockdown imposed in more than 40 countries worldwide.
+                        Enterprise League facilitates the way SMEs find new business partnerships and deals through a sophisticated software powered by AI and machine learning.
+                        <span id="dots3"></span><span id="more3">SMEs can find opportunities that match their individual needs and allows them to publish business tenders as well as bid on tenders posted by other companies. Meant for every business in the world, from all sectors and all locations. Enterprise League is quickly becoming a known platform to identify and access new business opportunities, find business partners and shake deals all completely remotely.
+    
+                          “Amid this crisis the only way companies can survive is to reinvent themselves” said Enterprise League CTO, Atanas Georgiev. Designed to help all companies, even the ones most at risk during this crisis.</span>
+                        
+                        </p>
+                        <a onclick="myFunction3()" id="myBtn3" class="title-blue fs-5 text-decoration-none d-flex justify-content-end">Read more</a>
+                      </div>
+                    
+                    </div>
+    
+                
+              </div>
+          </div>
+        </div>
+        <div class="baner col-12 px-lg-5">
+          <div class="col-lg-6 col-sm-12 media-b d-flex my-lg-4 my-md-2 px-lg-4 ">
+            <div class="col-lg-3 me-lg-4 offset-lg-3">
+            <img src="Style/Img/media.svg" class="med-img">
+            </div>
+            <div class="media-b-text col-lg-5">
+            <h5 class="responsive-text-size">Media</h5>
+            <p><a href="https://drive.google.com/drive/folders/1a6s5iZdMBySIpOKtSciioqbewA711hnA" class="text-decoration-none">Download</a> our logos and brand photography for media use</p>
+          </div>
+          </div>
+          <div class="contact-b col-lg-6 col-sm-12 d-flex  my-lg-4 my-md-2">
+            <div class="col-lg-3 me-lg-4">
+            <img src="Style/Img/contact.svg" class="med-img">
+            </div>
+            <div class="contact-b-text col-lg-6">
+            <h5 class="left-align responsive-text-size">Contact</h5>
+            <p class="left-align">For additional information contact us on <a href="mailto:info@enterpriseleague.com?subject=Press Enquiry" class="text-decoration-none">info@enterpriseleague.com</a></p>
+            </div>
+          </div>
+        </div>
+  
+  
+  <!-- Button trigger modal -->
+  <!-- <button id="modal-trigger" type="button" class="btn mt-5 btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  <!-- tabindex="-1" aria-labelledby="exampleModalLabel -->
+  <!-- Modal -->
+  <div class="modal fade col-12" id="exampleModal" >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+       
+        <div class="modal-body text-center">
+          <div class="text-modal mt-4">
+           <h3>Do you need micro business loans?</h3>
+           <p class="mt-4">Quick loans for businesses, invoice financing and flexible loans</p>
+          </div>
+          <div class="d-flex flex-row col-12 justify-content-center">
+          <div class="image-modal-1 col-6">
+            <img src="Style/Img/violet.9459dd7e.svg" id="image-modal-1">
+            <br>
+            <button onclick="save_data(this.value)" value="no" id="no-btn" type="button" class="btn text-white modal-not-button mt-4" data-bs-dismiss="modal">NOT REALLY</button>
+          </div>
+          <div class="image-modal-2 col-6">
+            <img src="Style/Img/green.f01efa95.svg" id="image-modal-2"> 
+            <br>
+            <button onclick="save_data(this.value)" value="yes" id="yes-btn" type="button" class="btn text-white modal-yes-button mt-4" data-bs-dismiss="modal">YES! EXTRA MONEY</button>
+    
+        </div>
+      </div>
+           <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn modal-button btn-primary">Save changes</button> -->
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  
+      <footer class="footer">
+        <div class="col-12">
+          <div class=" d-flex justify-content-start row py-5">
+              <div class="col-lg-3 offset-lg-2 my-4 me-lg-5">
+                <div class="img-logo-footer">
+                <img class="logo-footer" src="Style/Img/logo-transparent.webp">
+                </div>
+                <div class="footer-text">
+                <p>Discover a <span class="world-image width: 110px">world</span> of opportunities</p>
+                </div>
+                <div class="icons">
+                <a target="_blank" href="https://www.facebook.com/enterpriseleague/"><img src="Style/Img/Icon metro-facebook.png" class=""></a>
+                <a target="_blank" href="https://www.instagram.com/enterpriseleague/"><img src="Style/Img/Icon simple-instagram.png" class="ms-lg-4"></a>
+                <a target="_blank" href="https://twitter.com/enterpriseleag1/"><img src="Style/Img/Icon simple-twitter.png" class="ms-lg-4"></a>
+                <a target="_blank" href="https://www.linkedin.com/company/enterpriseleague/"><img src="Style/Img/Icon awesome-linkedin.png" class="ms-lg-4"></a>
+                </div>
+              </div>
+              <div class="second col-lg-1 col-md-4 mt-3 me-lg-5">
+                <div class="list">
+                  <span>Company</span>
+                  <ul>
+                    <li><a href="https://enterpriseleague.com/about-us class=" target="_blank" class="text-decoration-none text-reset">About</a></li>
+                    <li><a href="https://enterpriseleague.com/about/team" target="_blank" class="text-decoration-none text-reset">Team</a></li>
+                    <li><a href="https://enterpriseleague.com/blog/write-for-us/" target="_blank" class="text-decoration-none text-reset">Write for us</a></li>
+                    <li><a href="https://enterpriseleague.com/blog/advertise-with-us/" target="_blank" class="text-decoration-none text-reset">Advertise</a></li>
+                    <li><a href="https://enterpriseleague.com/about/newsroom" target="_blank" class="text-decoration-none text-reset">Newsroom</a></li>
+                    <li><a href="https://enterpriseleague.com/blog/careers/" target="_blank" class="text-decoration-none text-reset">Careers</a></li>
+                    <li><a href="https://enterpriseleague.com/blog/contact/" target="_blank" class="text-decoration-none text-reset">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="second col-lg-1 col-md-4 mt-3 me-lg-5">
+                <div class="list">
+                  <span>Product</span>
+                  <ul>
+                    <li><a href="https://enterpriseleague.com/product" target="_blank" class="text-decoration-none text-reset">Platform</a></li>
+                    <li><a href="https://enterpriseleague.com/dealzone" target="_blank" class="text-decoration-none text-reset">Dealzone</a></li>
+                    <li><a href="https://enterpriseleague.com/explore" target="_blank" class="text-decoration-none text-reset">Directory</a></li>
+                    <li><a href="https://enterpriseleague.com/pricing" target="_blank" class="text-decoration-none text-reset">Pricing</a></li>
+                    <li><a href="https://enterpriseleague.com/hire" target="_blank" class="text-decoration-none text-reset">All categories</a></li>
+                    <li><a href="https://enterpriseleague.com/solutions" target="_blank" class="text-decoration-none text-reset">Solutions</a></li>
+                    <li><a href="https://enterpriseleague.com/why-get-listed" target="_blank" class="text-decoration-none text-reset">Get listed</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="second col-lg-2 col-md-4 mt-3">
+                <div class="list">
+                  <span>Resources</span>
+                  <ul>
+                    <li><a href="https://enterpriseleague.com/blog/" target="_blank" class="text-decoration-none text-reset">Blog</a></li>
+                    <li><a href="https://enterpriseleague.com/blog/faq/" target="_blank" class="text-decoration-none text-reset">Support</a></li>
+                    <li><a href="https://enterpriseleague.com/blog/privacy-policy/" target="_blank" class="text-decoration-none text-reset">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+             
+          </div>
+        </div>    
+      </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="JS/script.js"></script>
+      </body>
+  
+  
+  </html>
